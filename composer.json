@@ -4,9 +4,6 @@
     "keywords": ["valoon", "session", "php", "fast", "secure"],
     "type": "project",
     "license": "MIT",
-    "require": {
-        "php": ">=7.0.0"
-    }
     "autoload": {
         "classmap": [
             "App\Valoon\Session"
