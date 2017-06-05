@@ -1,5 +1,7 @@
 {
     "name": "nephp/session",
     "description": "Valoon Session Management - A secure way to use php sessions",
-    "keywords": ["valoon", "session", "php", "fast", "secure"]  
+    "keywords": ["valoon", "session", "php", "fast", "secure"],
+    "license": "MIT",
+    
 }
