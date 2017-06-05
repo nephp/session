@@ -1,5 +1,5 @@
 <?php
-namespace App\Valoon\Session;
+namespace ValoonSession;
 class Session {
 	public static function startSession() {
         session_start();
