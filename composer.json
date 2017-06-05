@@ -3,5 +3,7 @@
     "description": "Valoon Session Management - A secure way to use php sessions",
     "keywords": ["valoon", "session", "php", "fast", "secure"],
     "license": "MIT",
-    
+    "require": {
+        "php": ">=7.0.0"
+    }
 }
