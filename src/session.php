@@ -43,10 +43,22 @@ class Session {
 			self::set('userIp', $_SERVER['REMOTE_ADDR']);
 			self::set('userAgent', $_SERVER['HTTP_USER_AGENT']);
 			return true;
-		} elseif (!equals(self::get('userIp'), $_SERVER['REMOTE_ADDR']) || !equals(self::get('userAgent'), $_SERVER['HTTP_USER_AGENT']))
+		} elseif (!self::equals(self::get('userIp'), $_SERVER['REMOTE_ADDR']) || !self::equals(self::get('userAgent'), $_SERVER['HTTP_USER_AGENT']))
 			return false;
 		else
 			return true;
+	}
+	private static function equals($knownString, $userString) {
+		$ret = 0;
+		if (strlen($knownString) !== strlen($userString)) {
+			$userString = $knownString;
+			$ret = 1;
+        	}
+		$res = $knownString ^ $userString;
+		for ($i = strlen($res) - 1; $i >= 0; --$i) {
+			$ret |= ord($res[$i]);
+		}
+        	return !$ret;
 	}
 }
 ?>
