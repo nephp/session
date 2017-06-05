@@ -1,14 +1,14 @@
 {
-    "name": "nephp/session",
-    "description": "Valoon Session Management - A secure way to use php sessions",
-    "keywords": ["valoon", "session", "php", "fast", "secure"],
-    "type": "project",
-    "license": "MIT",
-    "autoload": {
-        "classmap": [
-            "App\Valoon\Session"
+    "name" : "nephp/session",
+    "description" : "Valoon Session Management - A secure way to use php sessions",
+    "keywords" : ["valoon", "session", "php", "fast", "secure"],
+    "type" : "project",
+    "license" : "MIT",
+    "autoload" : {
+        "classmap" : [
+            "Session"
         ],
-        "files": [
+        "files" : [
             "src/session.php"
         ]
     }
