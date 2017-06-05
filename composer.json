@@ -2,11 +2,17 @@
     "name": "nephp/session",
     "description": "Valoon Session Management - A secure way to use php sessions",
     "keywords": ["valoon", "session", "php", "fast", "secure"],
+    "type": "project",
     "license": "MIT",
     "require": {
         "php": ">=7.0.0"
     }
     "autoload": {
-        "psr-0": { "Session": "src/" }
+        "classmap": [
+            "App\Valoon\Session"
+        ],
+        "files": [
+            "src/session.php"
+        ]
     }
 }
