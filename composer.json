@@ -6,4 +6,7 @@ n{
     "require": {
         "php": ">=7.0.0"
     }
+    "autoload": {
+        "psr-0": { "Session": "src/" }
+    },
 }
