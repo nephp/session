@@ -1,15 +1,13 @@
 {
     "name" : "nephp/session",
+    "type": "library",
     "description" : "Valoon Session Management - A secure way to use php sessions",
-    "keywords" : ["valoon", "session", "php", "fast", "secure"],
-    "type" : "project",
-    "license" : "MIT",
-    "autoload" : {
-        "classmap" : [
-            "Session"
-        ],
-        "files" : [
-            "src/session.php"
-        ]
-    }
+    "keywords" : ["valoon", "session", "php", "fast", "secure", "easy"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nicholas English",
+            "email": "nenglish443@gmail.com"
+        }
+    ],
 }
